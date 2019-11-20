@@ -26,8 +26,28 @@
 	padding: 0;
 }
 
+.projects-heading {
+	text-align: center;	
+}
+
+.projects-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.project-image {
+	justify-self: center;
+	padding: 4%;
+}
+
 @media (max-width: 480px) {
 	.about-grid {
+		grid-template-columns: 100%;
+	}
+}
+
+@media (max-width: 650px) {
+	.projects-grid {
 		grid-template-columns: 100%;
 	}
 }
