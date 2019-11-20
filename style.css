@@ -25,3 +25,9 @@
 	list-style: none;
 	padding: 0;
 }
+
+@media (max-width: 480px) {
+	.about-grid {
+		grid-template-columns: 100%;
+	}
+}
