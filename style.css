@@ -44,8 +44,35 @@ h1, h2, h3, h4 {
 }
 
 .project-image {
+	border-radius: 5px;
+	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+	transition: all ease-in-out .2s;
+}
+
+.project-image:hover {
+	filter: brightness(.75);
+	box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
+}
+
+.project-image-wrapper {
 	justify-self: center;
 	padding: 4%;
+	position: relative;
+}
+
+.project-image-wrapper:hover > h4 {
+	visibility: visible;
+}
+
+.project-image-wrapper > h4 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	visibility: hidden;
+	z-index: 2;
+	transition: all ease-in-out .2s;
 }
 
 .links-and-contact {
